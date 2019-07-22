@@ -21,13 +21,14 @@ class _NewTransactionState extends State<NewTransaction> {
         _amountController.text); // store and covert amount string to double
 
     // will not allow data to submit under these two circumstances
-    if (submittedTitle.isEmpty || submittedAmount <= 0) {
+    if (submittedTitle.isEmpty || submittedAmount <= 0 || _selectedDate == null || _amountController.text.isEmpty) {
       return;
     }
 
     widget.addTx(
       submittedTitle,
       submittedAmount,
+      _selectedDate,
     );
 
     // closes top most screen displayed so modal closes after submission
