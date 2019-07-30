@@ -1,6 +1,6 @@
 # wallet_trackr
 
-WalletTrackr is an iOS and Android application that allows you to keep track of your finances. It is written in Dart using the Flutter flame
+WalletTrackr is an iOS and Android application that allows you to keep track of your finances. It is written in Dart using the Flutter framework.
 
 ## Getting Started
 
